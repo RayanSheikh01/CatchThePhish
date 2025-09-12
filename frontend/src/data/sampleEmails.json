@@ -1,0 +1,378 @@
+[
+    {
+      "id": 1,
+      "sender": "support@yourbank-secure.com",
+      "senderDisplay": "Your Bank Support",
+      "subject": "URGENT: Verify your account",
+      "body": "Dear customer, we noticed suspicious activity. Click http://yourbank.verify-account.com to verify immediately.",
+      "isPhish": true,
+      "clues": [
+        "Sender domain is not the official bank domain",
+        "Link uses a subdomain that looks suspicious",
+        "Urgent language pressuring you to click"
+      ]
+    },
+    {
+      "id": 2,
+      "sender": "no-reply@github.com",
+      "senderDisplay": "GitHub",
+      "subject": "New sign-in to your GitHub account",
+      "body": "We detected a new sign-in from London. If this was you, ignore. If not, secure your account here: https://github.com/settings/security",
+      "isPhish": false,
+      "clues": [
+        "Official domain matches sender",
+        "No urgent or threatening language"
+      ]
+    },
+    {
+      "id": 3,
+      "sender": "admin@paypalsecure-login.com",
+      "senderDisplay": "PayPal Admin",
+      "subject": "Your account will be locked",
+      "body": "Click https://paypalsecure-login.com/verify to prevent account suspension.",
+      "isPhish": true,
+      "clues": [
+        "Domain is not PayPal's official domain",
+        "Suspicious link",
+        "Threatening language"
+      ]
+    },
+    {
+      "id": 4,
+      "sender": "newsletter@bbc.co.uk",
+      "senderDisplay": "BBC News",
+      "subject": "Top stories today",
+      "body": "Here are today's top news stories. Read more on https://www.bbc.co.uk/news",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content with no urgent links"
+      ]
+    },
+    {
+      "id": 5,
+      "sender": "security@apple.com",
+      "senderDisplay": "Apple Security",
+      "subject": "Your Apple ID has been compromised",
+      "body": "Verify your account here: http://appleid.verify-account.com immediately.",
+      "isPhish": true,
+      "clues": [
+        "Link domain does not match official Apple domain",
+        "Urgent language",
+        "Sender looks slightly different from real Apple email"
+      ]
+    },
+    {
+      "id": 6,
+      "sender": "updates@linkedin.com",
+      "senderDisplay": "LinkedIn",
+      "subject": "You have new connection requests",
+      "body": "View your new connection requests at https://www.linkedin.com/mynetwork/",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "No suspicious links or urgent language"
+      ]
+    },
+    {
+      "id": 7,
+      "sender": "support@netflix-login.com",
+      "senderDisplay": "Netflix Support",
+      "subject": "Your account has been suspended",
+      "body": "Click https://netflix-login.com/verify to reactivate your account.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat of account suspension"
+      ]
+    },
+    {
+      "id": 8,
+      "sender": "notifications@twitter.com",
+      "senderDisplay": "Twitter",
+      "subject": "New login detected",
+      "body": "We detected a new login. If it wasn’t you, secure your account: https://twitter.com/settings/security",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative, non-threatening content"
+      ]
+    },
+    {
+      "id": 9,
+      "sender": "support@chasebank-verify.com",
+      "senderDisplay": "Chase Bank",
+      "subject": "Verify your online banking",
+      "body": "Click https://chasebank-verify.com/login to avoid account closure.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat language"
+      ]
+    },
+    {
+      "id": 10,
+      "sender": "contact@amazon.com",
+      "senderDisplay": "Amazon",
+      "subject": "Your order has shipped",
+      "body": "Your order #12345 has shipped. Track it here: https://www.amazon.com/trackorder",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content, no urgent request"
+      ]
+    },
+    {
+      "id": 11,
+      "sender": "billing@spotify-secure.com",
+      "senderDisplay": "Spotify Billing",
+      "subject": "Payment failed",
+      "body": "Your payment failed. Click https://spotify-secure.com/payment to resolve immediately.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent language"
+      ]
+    },
+    {
+      "id": 12,
+      "sender": "alerts@dropbox.com",
+      "senderDisplay": "Dropbox",
+      "subject": "New device signed in",
+      "body": "A new device signed in to your account. If this was not you, review your activity: https://www.dropbox.com/account/security",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative, non-threatening language"
+      ]
+    },
+    {
+      "id": 13,
+      "sender": "support@microsoft-verify.com",
+      "senderDisplay": "Microsoft Support",
+      "subject": "Immediate action required",
+      "body": "Click https://microsoft-verify.com/login to secure your account immediately.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent language"
+      ]
+    },
+    {
+      "id": 14,
+      "sender": "team@slack.com",
+      "senderDisplay": "Slack",
+      "subject": "New workspace invite",
+      "body": "You have been invited to join a Slack workspace: https://slack.com/invite",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "No urgent request or threat"
+      ]
+    },
+    {
+      "id": 15,
+      "sender": "service@bankofamerica-login.com",
+      "senderDisplay": "Bank of America",
+      "subject": "Account verification required",
+      "body": "Verify your account now: http://bankofamerica-login.com/verify",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent request"
+      ]
+    },
+    {
+      "id": 16,
+      "sender": "info@coursera.org",
+      "senderDisplay": "Coursera",
+      "subject": "Your course starts today",
+      "body": "Welcome! Your course on Python begins today. Access here: https://www.coursera.org/learn/python",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative, safe content"
+      ]
+    },
+    {
+      "id": 17,
+      "sender": "alert@paypal-security.com",
+      "senderDisplay": "PayPal Security",
+      "subject": "Suspicious login detected",
+      "body": "Click https://paypal-security.com/verify to secure your account.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat language"
+      ]
+    },
+    {
+      "id": 18,
+      "sender": "support@airbnb.com",
+      "senderDisplay": "Airbnb",
+      "subject": "Booking confirmed",
+      "body": "Your booking at The Grand Hotel is confirmed. View details: https://www.airbnb.com/booking",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative, non-threatening content"
+      ]
+    },
+    {
+      "id": 19,
+      "sender": "admin@linkedin-login.com",
+      "senderDisplay": "LinkedIn Admin",
+      "subject": "Verify your account",
+      "body": "Click http://linkedin-login.com/verify-account to avoid restrictions.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent language"
+      ]
+    },
+    {
+      "id": 20,
+      "sender": "notifications@zoom.us",
+      "senderDisplay": "Zoom",
+      "subject": "Meeting scheduled",
+      "body": "Your meeting with Team Alpha is scheduled. Join at: https://zoom.us/j/123456789",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    },
+    {
+      "id": 21,
+      "sender": "security@chasebank-secure.com",
+      "senderDisplay": "Chase Security",
+      "subject": "Important security alert",
+      "body": "Click https://chasebank-secure.com/verify to secure your account immediately.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat language"
+      ]
+    },
+    {
+      "id": 22,
+      "sender": "service@etsy.com",
+      "senderDisplay": "Etsy",
+      "subject": "Your order has shipped",
+      "body": "Track your order here: https://www.etsy.com/your/orders",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    },
+    {
+      "id": 23,
+      "sender": "support@netflix-secure-login.com",
+      "senderDisplay": "Netflix Support",
+      "subject": "Your account will be suspended",
+      "body": "Click https://netflix-secure-login.com/verify to avoid suspension.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat language"
+      ]
+    },
+    {
+      "id": 24,
+      "sender": "info@khanacademy.org",
+      "senderDisplay": "Khan Academy",
+      "subject": "New lesson available",
+      "body": "A new lesson in Algebra is available: https://www.khanacademy.org/math/algebra",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    },
+    {
+      "id": 25,
+      "sender": "admin@apple-login.com",
+      "senderDisplay": "Apple Admin",
+      "subject": "Verify your Apple ID",
+      "body": "Click http://apple-login.com/verify to avoid account suspension.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent language"
+      ]
+    },
+    {
+      "id": 26,
+      "sender": "support@dropbox.com",
+      "senderDisplay": "Dropbox Support",
+      "subject": "Shared file notification",
+      "body": "You have been granted access to a new file: https://www.dropbox.com/s/abcdefg",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    },
+    {
+      "id": 27,
+      "sender": "service@paypal-login.com",
+      "senderDisplay": "PayPal Service",
+      "subject": "Account verification required",
+      "body": "Click http://paypal-login.com/verify-account to secure your account.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent request"
+      ]
+    },
+    {
+      "id": 28,
+      "sender": "alerts@zoom.us",
+      "senderDisplay": "Zoom Alerts",
+      "subject": "Meeting reminder",
+      "body": "Your meeting starts at 3 PM. Join here: https://zoom.us/j/987654321",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    },
+    {
+      "id": 29,
+      "sender": "security@microsoft-login.com",
+      "senderDisplay": "Microsoft Security",
+      "subject": "Immediate action required",
+      "body": "Click https://microsoft-login.com/verify to secure your account immediately.",
+      "isPhish": true,
+      "clues": [
+        "Domain mismatch",
+        "Suspicious link",
+        "Urgent threat language"
+      ]
+    },
+    {
+      "id": 30,
+      "sender": "info@udemy.com",
+      "senderDisplay": "Udemy",
+      "subject": "New course recommendation",
+      "body": "We recommend a new Python course: https://www.udemy.com/course/python",
+      "isPhish": false,
+      "clues": [
+        "Official domain",
+        "Informative content only"
+      ]
+    }
+  ]
+  
