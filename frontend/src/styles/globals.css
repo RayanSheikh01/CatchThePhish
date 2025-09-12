@@ -1,0 +1,115 @@
+/* Stylise email */
+
+/* convert question out of total into a progress bar with green added to the bar after every
+question */
+
+
+
+.email-container.correct {
+    background-color: rgba(52, 202, 52, 0.457);       /* flash green */
+    transition: background-color 0.3s ease; /* smooth colour change */
+  }
+  
+  .email-container.incorrect {
+    background-color: rgba(172, 5, 5, 0.427);         /* flash red */
+    transition: background-color 0.3s ease;
+  }
+  
+
+.email-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+.email-header {
+    margin-bottom: 12px;
+}
+.email-subject {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.email-sender {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+.email-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+.email-clues {
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: #888;
+}
+.email-clue-item {
+    margin-bottom: 4px;
+}
+/* Stylise buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    color: #333;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    color: #555;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.875rem;
+}
+/* Utility classes */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.p-4 { padding: 1rem; }
+
+.bg-blue-500 { background-color: #3b82f6; color: white; }
+.bg-blue-600 { background-color: #2563eb; color: white; }
+.bg-green-500 { background-color: #10b981; color: white; }
+.bg-red-500 { background-color: #ef4444; color: white; }
+.rounded { border-radius: 0.375rem; }
+.shadow { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+.cursor-pointer { cursor: pointer; }

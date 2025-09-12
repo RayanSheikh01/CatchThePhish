@@ -19,15 +19,16 @@ function App() {
     }
 
     if (userAnswer === currentEmail.isPhish) {
-      document.body.style.backgroundColor = "#d4edda"; // Green for correct
+      // make email container flash green
+      document.getElementsByClassName("email-container")[0].classList.add("correct");
       setTimeout(() => {
-        document.body.style.backgroundColor = ""; // Reset after 1 second
+        document.getElementsByClassName("email-container")[0].classList.remove("correct"); // Reset after 1 second
       }, 1000);
       setScore(score + 1);
     } else {
-      document.body.style.backgroundColor = "#f8d7da"; // Red for incorrect
+      document.getElementsByClassName("email-container")[0].classList.add("incorrect");
       setTimeout(() => {
-        document.body.style.backgroundColor = ""; // Reset after 1 second
+        document.getElementsByClassName("email-container")[0].classList.remove("incorrect");// Reset after 1 second
       }, 1000);
     }
 
@@ -58,7 +59,7 @@ function App() {
       <header className="mb-6">
         <h1 className="text-3xl font-bold text-center text-blue-600">Catch The Phish</h1>
       </header>
-      <main className="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+      <main className="max-w-2xl mx-auto bg-white p-6 rounded shadow email-container" id="email-container">
         <h2 className="text-2xl font-semibold mb-4">Email {currentEmailIndex + 1} of {total}</h2>
         <h2 className="text-xl font-semibold mb-2">
           From: {currentEmail.senderDisplay} &lt;{currentEmail.sender}&gt;
