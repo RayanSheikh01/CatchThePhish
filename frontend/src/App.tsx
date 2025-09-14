@@ -22,13 +22,13 @@ function App() {
       // make email container flash green
       document.getElementsByClassName("email-container")[0].classList.add("correct");
       setTimeout(() => {
-        document.getElementsByClassName("email-container")[0].classList.remove("correct"); // Reset after 1 second
+        document.getElementsByClassName("email-container")[0].classList.remove("correct"); 
       }, 1000);
       setScore(score + 1);
     } else {
       document.getElementsByClassName("email-container")[0].classList.add("incorrect");
       setTimeout(() => {
-        document.getElementsByClassName("email-container")[0].classList.remove("incorrect");// Reset after 1 second
+        document.getElementsByClassName("email-container")[0].classList.remove("incorrect");
       }, 1000);
     }
 
@@ -36,8 +36,6 @@ function App() {
       setCurrentEmailIndex(currentEmailIndex + 1);
       setUserAnswer(null); // Reset the answer for the next email
     } else {
-      alert(`Quiz completed! Your final score is ${score + (userAnswer === currentEmail.isPhish ? 1 : 0)} out of ${total}.`);
-      // Optionally reset the quiz
       setCurrentEmailIndex(0);
       setScore(0);
       setUserAnswer(null);
